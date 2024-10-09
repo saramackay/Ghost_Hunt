@@ -38,6 +38,12 @@ public class PlayerController : MonoBehaviour
             winTextObject.gameObject.SetActive(true);
             //winTextObject.text = "You lose!"; (Error here, check it out later)
         }
+
+        if (collision.gameObject.CompareTag("FlashLightObject"))
+        {
+            Destroy(gameObject);
+            winTextObject.gameObject.SetActive(true);
+        }
     }
     void OnTriggerEnter(Collider other)
     {
