@@ -6,11 +6,11 @@ using UnityEngine.InputSystem;
 public class FlashLightDeath : MonoBehaviour
 {
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            Destroy(other.gameObject);
 
             //winTextObject.gameObject.SetActive(false);
             //winTextObject.text = "You lose!"; (Error here, check it out later)

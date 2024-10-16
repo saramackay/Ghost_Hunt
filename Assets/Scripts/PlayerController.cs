@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private float movementY;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
+    public GameObject loseTextObject;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
         count = 0;
         SetCountText();
         winTextObject.SetActive(false);
+        loseTextObject.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -55,7 +57,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void OnMove (InputValue movementValue)
+    void OnMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
         movementX = movementVector.x;
@@ -71,5 +73,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        loseTextObject.SetActive(true);
     }
+
+}
 
