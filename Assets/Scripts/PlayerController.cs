@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -70,6 +71,7 @@ public class PlayerController : MonoBehaviour
         if (count >= 4)
         {
             winTextObject.SetActive(true);
+
         }
     }
 
@@ -78,5 +80,14 @@ public class PlayerController : MonoBehaviour
         loseTextObject.SetActive(true);
     }
 
+    //public void RestartButton()
+  //  {
+  //      SceneManager.LoadScene("Game");
+   // }
+
+ //   public void ExitButton()
+ //   {
+   //     SceneManager.LoadScene("MainMenu");
+ //   }
 }
 
