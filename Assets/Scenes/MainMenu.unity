@@ -1747,11 +1747,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8047868754348886589, guid: 9a3cd226e5bef6846a8d8eec60d54379,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9a2900acca77d79469fcf7079e1d68d0, type: 2}
+    - target: {fileID: 773838507640681120, guid: 9a3cd226e5bef6846a8d8eec60d54379,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9a2900acca77d79469fcf7079e1d68d0, type: 2}
     - target: {fileID: 919132149155446097, guid: 9a3cd226e5bef6846a8d8eec60d54379,
         type: 3}
       propertyPath: m_Name
       value: Ghost_Sphere_Model
       objectReference: {fileID: 0}
+    - target: {fileID: 1609660626712235537, guid: 9a3cd226e5bef6846a8d8eec60d54379,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9a2900acca77d79469fcf7079e1d68d0, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
