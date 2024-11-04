@@ -1302,7 +1302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   countText: {fileID: 1111209146}
-  winTextObject: {fileID: 1100645953}
+  winTextObject: {fileID: 879545333}
   loseTextObject: {fileID: 468668843}
   ButtonMenu: {fileID: 0}
 --- !u!114 &78535243
@@ -7733,6 +7733,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 78535248}
+  wintext: {fileID: 0}
+  Enemy: {fileID: 0}
 --- !u!195 &584814196
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8014,6 +8016,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 78535248}
+  wintext: {fileID: 0}
+  Enemy: {fileID: 0}
 --- !u!195 &638203606
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8902,9 +8906,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719447603}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.343863, y: 2.65911, z: 6.612357}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.9954598, y: 0.7867747, z: 4.088013}
+  m_LocalScale: {x: 0.16412656, y: 0.29587895, z: 0.20738329}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 74335802}
@@ -8913,7 +8917,7 @@ Transform:
   - {fileID: 839740548}
   - {fileID: 2128781826}
   - {fileID: 1924654482}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1108027570}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &741295012
 GameObject:
@@ -10544,6 +10548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 78535248}
+  wintext: {fileID: 0}
+  Enemy: {fileID: 0}
 --- !u!195 &882324585
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13582,6 +13588,7 @@ Transform:
   m_LocalScale: {x: 6.0928593, y: 3.3797605, z: 4.821989}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 719447604}
   - {fileID: 112031299}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18751,6 +18758,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 78535248}
+  wintext: {fileID: 879545333}
+  Enemy: {fileID: 458228877}
 --- !u!195 &1530262106
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25510,5 +25519,4 @@ SceneRoots:
   - {fileID: 78535248}
   - {fileID: 458228878}
   - {fileID: 498933492}
-  - {fileID: 719447604}
   - {fileID: 912092333}

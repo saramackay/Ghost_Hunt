@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(this.gameObject);
-
             winTextObject.gameObject.SetActive(true);
             ButtonMenu.SetActive(true);
         }
@@ -70,10 +69,10 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 4)
+        if (count == 4)
         {
             winTextObject.SetActive(true);
-
+            rb.isKinematic = true;
         }
     }
 

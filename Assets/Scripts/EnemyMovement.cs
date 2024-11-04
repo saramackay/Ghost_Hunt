@@ -7,6 +7,8 @@ public class EnemyMovement : MonoBehaviour
 {
     public Transform player;
     private NavMeshAgent navMeshAgent;
+    public GameObject wintext;
+    public GameObject Enemy;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,10 @@ public class EnemyMovement : MonoBehaviour
         if (player != null)
         {
             navMeshAgent.SetDestination(player.position);
+        }
+        if (wintext.activeSelf)
+        {
+            Enemy.SetActive(false);
         }
     }
 }
