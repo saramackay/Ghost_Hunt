@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     public GameObject loseTextObject;
+    public GameObject ButtonMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
         SetCountText();
         winTextObject.SetActive(false);
         loseTextObject.SetActive(false);
+        ButtonMenu.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -36,10 +38,10 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
 
             winTextObject.gameObject.SetActive(true);
-            //winTextObject.text = "You lose!"; (Error here, check it out later)
+            ButtonMenu.SetActive(true);
         }
 
         if (collision.gameObject.CompareTag("FlashLightObject"))
