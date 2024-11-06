@@ -39,8 +39,8 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(this.gameObject);
-            winTextObject.gameObject.SetActive(true);
-            ButtonMenu.SetActive(true);
+           // winTextObject.gameObject.SetActive(true);//
+           // ButtonMenu.SetActive(true);//
         }
 
         if (collision.gameObject.CompareTag("FlashLightObject"))
