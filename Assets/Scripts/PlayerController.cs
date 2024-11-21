@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
         ButtonMenu.SetActive(false);
     }
 
+
+
     private void FixedUpdate()
     {
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
@@ -51,7 +53,7 @@ public class PlayerController : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("PickUp"))
+        if (other.gameObject.CompareTag("Trigger"))
         {
             other.gameObject.SetActive(false);
             count = count + 1;
