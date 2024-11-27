@@ -297,6 +297,7 @@ MonoBehaviour:
   countText: {fileID: 0}
   winTextObject: {fileID: 0}
   loseTextObject: {fileID: 0}
+  ButtonMenu: {fileID: 0}
 --- !u!114 &102596707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1705,7 +1706,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9a3cd226e5bef6846a8d8eec60d54379,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.082
+      value: -0.013
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9a3cd226e5bef6846a8d8eec60d54379,
         type: 3}
@@ -1750,6 +1751,11 @@ PrefabInstance:
     - target: {fileID: -8047868754348886589, guid: 9a3cd226e5bef6846a8d8eec60d54379,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9a2900acca77d79469fcf7079e1d68d0, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 9a3cd226e5bef6846a8d8eec60d54379,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 9a2900acca77d79469fcf7079e1d68d0, type: 2}
     - target: {fileID: 773838507640681120, guid: 9a3cd226e5bef6846a8d8eec60d54379,
